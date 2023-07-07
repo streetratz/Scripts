@@ -1,2 +1,4 @@
-# PSScripts
-Super Cool scripts to make your life easier
+# Scripts
+Overcoming obstacbles 1 at a time!
+
+Making life easier...
