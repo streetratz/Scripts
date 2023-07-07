@@ -4,7 +4,8 @@
 * _Show nearest Network Rules_
 
 # Notes:
-## Iterate through the Firewall Policy Rules.
+
+Handling the Azure Firewall Policy Object
 
 * $d : Is the Firewall Policy Object.
 * $x : Is the Firewall Policy Rule Collecection
