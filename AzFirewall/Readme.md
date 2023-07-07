@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # Network Collection:
 From File:
 > .\Check-AzFwirewallRules.ps1 -FirewallJson -CollectionType Network -SourceAddress '10.35.6.42' -DestinationAddress '207.25.253.47' -Object .\testAzFwJSON.json
