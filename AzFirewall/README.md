@@ -1,5 +1,5 @@
 # Powershell Help
-Tests which Network [OR] Application Rules match a provided set.
+Check which Network [OR] Application Rules match a provided set.
 
 Script: Check-AzFirewallRules.ps1
 Version: 1.0
@@ -17,7 +17,7 @@ Author: Johnfern
 > .\Check-AzFwirewallRules.ps1 -Firewall -CollectionType Network -SourceAddress '10.35.6.42' -DestinationAddress '207.25.253.47' -Object $AzfwObj
 ````
 
-# Application Collection: 
+## Application Collection: 
 ### From File:
 ````
 > .\Check-AzFwirewallRules.ps1 -FirewallJson -CollectionType Application -DestinationUrl 'johnfern.blob.core.windows.net' -Object .\testAzFwJSON.json
@@ -27,8 +27,6 @@ Author: Johnfern
 > $AzfwObj = Get-AzFirewall -Name 'Play-FW-1' -ResourceGroupName 'AzFw-Playground-1'
 > .\Check-AzFwirewallRules.ps1 -Firewall -CollectionType Application -DestinationUrl 'johnfern.blob.core.windows.net' -Object $AzfwObj
 ````
-PS> $Azfw = Get-AzFirewall -Name 'AzFw-RG' -ResourceGroupName 'AzFw-Name'
-PS> .\Check-AzFwirewallRules.ps1 -FirewallJson -CollectionType Network -SourceAddress 10.10.10.5 -DestinationAddress 131.107.255.255 -Object .\testAzFwJSON.json
 
 ## Example Outputs
 ### From Firewall Object:
