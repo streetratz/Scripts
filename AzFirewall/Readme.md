@@ -1,4 +1,6 @@
-Network Collection:
+[[_TOC_]]
+
+# Network Collection:
 From File:
 > .\Check-AzFwirewallRules.ps1 -FirewallJson -CollectionType Network -SourceAddress '10.35.6.42' -DestinationAddress '207.25.253.47' -Object .\testAzFwJSON.json
 
@@ -7,7 +9,7 @@ From Get-AzFirewallObject:
 > .\Check-AzFwirewallRules.ps1 -Firewall -CollectionType Network -SourceAddress '10.35.6.42' -DestinationAddress '207.25.253.47' -Object $AzfwObj
 
 
-Application Collection: 
+# Application Collection: 
 From File:
 > .\Check-AzFwirewallRules.ps1 -FirewallJson -CollectionType Application -DestinationUrl 'johnfern.blob.core.windows.net' -Object .\testAzFwJSON.json
 
