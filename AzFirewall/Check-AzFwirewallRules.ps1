@@ -93,7 +93,7 @@ PARAM (
     [Parameter(ParameterSetName = 'FirewallJSON')]
     [ValidateSet("Network","Application")]
     [string]$CollectionType,
-    [Parameter (Mandatory = $False, ParameterSetName = 'Network')]
+    [Parameter (Mandatory = $False)]
     [string]$Protocol = 'Any',
     [Parameter (Mandatory = $False)]
     [string]$SourceAddress = 'Any',
@@ -103,13 +103,13 @@ PARAM (
     [string]$DestinationPort = 'Any',
     [Parameter (Mandatory = $False)]
     [switch]$Firewall,
-    [Parameter (Mandatory = $False)]
-    [switch]$FirewallPolicy,
     [Parameter (Mandatory = $False, DontShow)]
+    [switch]$FirewallPolicy,
+    [Parameter (Mandatory = $False)]
     [switch]$FirewallJson,
     [Parameter (Mandatory = $False)]
     [Object]$Object,
-    [Parameter (Mandatory = $False, ParameterSetName = 'Application')]
+    [Parameter (Mandatory = $False)]
     [string]$DestinationUrl = 'Any'
 )
 # Set StrictMode
